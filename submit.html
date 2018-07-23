@@ -11,28 +11,33 @@
   </head>
   <body>
     <!-- navbar below -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img src="https://pbs.twimg.com/profile_images/2672975126/dbdddfca9807313d8c7b1734d78dcc50_400x400.png" width="30" height="30" class="d-inline-block align-top" alt="">
         PrepList
       </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="landing.html">Home</a>
+          <a class="nav-item nav-link" href="submit.html">Post Ads</a>
+          <a class="nav-item nav-link" href="postings.html">Read Ads</a>
+        </div>
+      </div>
     </nav>
 
     <div class="container">
-    <!-- title below -->
-      <div id = 'header'>
-        <h1>PrepList</h1>
-        <h5>Prep For Prep student's place for getting rid of all that stuff you don't need</h5>
-      </div>
-
       <div class="row">
-        <div class="col-5">
+        <div class="col-2"></div>
+        <div class="col-8">
 
 
         <!-- TODO: Have form below send form data to firebase -->
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-4">Post Your Item</h1>
+              <h1 class="display-4">Post Item Form</h1>
               <p class="lead">
                 <form>
                   <div class="form-group">
@@ -56,22 +61,6 @@
           </div>
         </div>
         <!-- TODO: Have form above send form data to firebase -->
-
-
-        <div class="col-7">
-          <h3 id="postingsHeader">PrepList Postings</h3>
-
-        <!-- TODO:postings should appear in the div below -->
-          <div id="postings">
-
-          </div>
-        <!-- TODO:postings should appear in the div above -->
-
-        </div>
-      </div>
-    </div>
-
-
 
     <script type="text/javascript" src="script.js"></script>
   </body>
